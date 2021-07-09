@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -7,7 +9,7 @@ public class Doctor extends User{
     private String speciality;
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
 
-    Doctor(String name, String email){
+    public Doctor(String name, String email){
         super(name,email);
         this.speciality=speciality;
     }
@@ -32,7 +34,7 @@ public class Doctor extends User{
 
     @Override
     public String toString() {
-        return super.toString() + "\nDoctor{" +
+        return super.toString() + "\nmodel.Doctor{" +
                 " \nspeciality='" + speciality + '\'' +
                 ", \navailableAppointments=" + availableAppointments.toString() +
                 '}';
