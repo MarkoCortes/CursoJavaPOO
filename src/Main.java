@@ -8,16 +8,20 @@ public class Main {
         myDoctor.addAvailableAppointment(new Date(), "3 pm");
         myDoctor.addAvailableAppointment(new Date(), "4 pm");
         myDoctor.addAvailableAppointment(new Date(), "5 pm");
-        
+
+        System.out.println(myDoctor);
+
+        System.out.println();
+        System.out.println();
        // System.out.println(myDoctor.getAvailableAppointments());
-
-
-        for (Doctor.AvailableAppointment aA:myDoctor.availableAppointments) {
+     /*   for (Doctor.AvailableAppointment aA:myDoctor.availableAppointments) {
             System.out.println(aA.getDate()+ " "+ aA.getTime());
         }
-        //Patient paciente = new Patient("Marko", "marko@hotmail.com");
-        //paciente.setPhoneNumber("123456789");
-        //System.out.println(paciente.getPhoneNumber());
+      */
+        Patient paciente = new Patient("Marko", "marko@hotmail.com");
+        paciente.setPhoneNumber("12345678");
+        System.out.println(paciente.getPhoneNumber());
+        System.out.println(paciente);
 
 
 /*

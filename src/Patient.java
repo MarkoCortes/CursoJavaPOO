@@ -41,4 +41,13 @@ public class Patient extends User {
         return this.weight  + " Kg.";
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "Patient{" +
+                "birthday='" + birthday + '\'' +
+                ", weight=" + weight +
+                ", height=" + height +
+                ", blood='" + blood + '\'' +
+                '}';
+    }
 }
