@@ -52,4 +52,10 @@ public class Patient extends User {
                 ", blood='" + blood + '\'' +
                 '}';
     }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Es un paciente");
+        System.out.println("Hisotial completo desde nacimiento");
+    }
 }
