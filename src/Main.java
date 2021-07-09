@@ -4,7 +4,13 @@ public class Main {
       //  showMenu();
         Doctor myDoctor = new Doctor("Marko Alan","Familiar");
 
+        Patient paciente = new Patient("Marko", "marko@hotmail.com");
 
+        paciente.setPhoneNumber("123456789");
+        System.out.println(paciente.getPhoneNumber());
+
+
+/*
         System.out.println();
         System.out.println();
         Patient patient = new Patient("Alejandra", "alejandra@mail.com");
@@ -17,5 +23,6 @@ public class Main {
 
         System.out.println(patient.getName());
         System.out.println(patient2.getName());
+ */
     }
 }
